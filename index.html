@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio</title>
@@ -9,14 +10,11 @@
     <!-- Segment: Manrope Google Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet" />
     <!-- Segment: Font Awesome SDN -->
     <script src="https://kit.fontawesome.com/c426595272.js" crossorigin="anonymous"></script>
 
@@ -25,126 +23,153 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                // Texts
-                'gray1' : '#737373',
-                // Buttons
-                'green-primary': '#ABEF5F',
-                'green-secondary': 'rgba(171, 239, 95, 0.5)',
-                // Cards 
-                'card1' : '#E7C1D3',
-                'card2' : '#EFDA6E',
-                'card3' : '#A4DAC3',
-                'card4' : '#77AAEA',
-                // Background
-                'bg1' : '#F4F4F4',
-              },
-              BackgroundImage:{
-                'paper' : "url(./resources/assets/bg.jpg)",
-              }
-            }
-          }
-        }
+            theme: {
+                extend: {
+                    colors: {
+                        // Texts
+                        gray1: "#737373",
+                        gray2: "#494949",
+                        // Buttons
+                        "green-primary": "#ABEF5F",
+                        "green-secondary": "rgba(171, 239, 95, 0.5)",
+                        // Cards
+                        card1: "#E7C1D3",
+                        card2: "#EFDA6E",
+                        card3: "#A4DAC3",
+                        card4: "#77AAEA",
+                        // Background
+                        bg1: "#F4F4F4",
+                    },
+                    BackgroundImage: {
+                        paper: "url(./resources/assets/bg.jpg)",
+                    },
+                },
+            },
+        };
     </script>
     <!-- Segment: Style CSS -->
-     <style>
-        .font-manrope{
+    <style>
+        .font-manrope {
             font-family: "Manrope", sans-serif;
         }
-        
-     </style>
-  </head>
+    </style>
+</head>
 
-  <body class="font-manrope">
+<body class="font-manrope">
     <!-- Container: Header -->
     <header>
         <!-- Section: Nav bar -->
         <nav class="w-11/12 mx-auto pt-5">
             <div class="navbar">
                 <div class="navbar-start gap-x-1">
-                    <!-- <!-- Icon: Arrow -->
+                    <!-- Icon: Arrow -->
                     <div class="border rounded-full px-1 py-1 bg-green-primary">
                         <!-- <i class="fa-solid fa-arrow-right fa-lg -rotate-45"></i> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                        </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
                     </div>
                     <div>
                         <a class="text-2xl md:text-3xl font-extrabold">Rinterio</a>
                     </div>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal">
-                    <li><a class="text-base font-bold">Home</a></li>
-                    <li><a class="text-base font-semibold text-gray1 hover:text-black">Service</a></li>
-                    <li><a class="text-base font-semibold text-gray1 hover:text-black">Portfolio</a></li>
-                    <li><a class="text-base font-semibold text-gray1 hover:text-black">Blogs</a></li>
-                    <li><a class="text-base font-semibold text-gray1 hover:text-black">Contact Us</a></li>
-                  </ul>
+                    <ul class="menu menu-horizontal">
+                        <li><a class="text-base font-bold">Home</a></li>
+                        <li>
+                            <a class="text-base font-semibold text-gray1 hover:text-black">Service</a>
+                        </li>
+                        <li>
+                            <a class="text-base font-semibold text-gray1 hover:text-black">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="text-base font-semibold text-gray1 hover:text-black">Blogs</a>
+                        </li>
+                        <li>
+                            <a class="text-base font-semibold text-gray1 hover:text-black">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="navbar-end space-x-4">
                     <!-- Icon: Search -->
                     <div class="border p-2 hidden md:flex rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                         </svg>
                     </div>
                     <!-- Icon: Cart -->
                     <div class="border p-2 hidden md:flex rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
                     </div>
                     <!-- Button: Book Consult -->
                     <div class="hidden md:flex">
-                        <button class="btn bg-green-primary rounded-3xl text-base font-extrabold">Book Consult
+                        <button
+                            class="btn bg-green-primary hover:bg-green-primary border-none hover:border-none rounded-3xl text-base font-extrabold">
+                            Book Consult
                             <!-- Icon: Arrow -->
                             <div class="rounded-full px-1 py-1 bg-black">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"     stroke-width="2" stroke="white" class="size-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                            </svg> 
-                        </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="white" class="size-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </div>
                         </button>
-                        
                     </div>
                 </div>
                 <div class="dropdown ml-4">
-                    <div tabindex="0" role="button" class="btn bg-white border-[#E9E9E9] rounded-full lg:hidden ">
-                        <i class="fa-solid fa-bars fa-lg" style="color: #737373;"></i>
+                    <div tabindex="0" role="button" class="btn bg-white border-[#E9E9E9] rounded-full lg:hidden">
+                        <i class="fa-solid fa-bars fa-lg" style="color: #737373"></i>
                     </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content rounded-box z-[1] -ml-12 mt-1 w-28 p-1 shadow">
-                      <li><a>Home</a></li>
-                      <li><a>Service</a></li>
-                      <li><a>Portfolio</a></li>
-                      <li><a>Blogs</a></li>
-                      <li><a>Contact Us</a></li>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content rounded-box z-[1] -ml-12 mt-1 w-28 p-1 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
                     </ul>
-                </div>    
+                </div>
             </div>
         </nav>
         <!-- Section: Banner -->
         <section class="w-11/12 mx-auto pt-10">
             <!-- Segment: Image -->
             <div>
-                <img class="mx-auto" src="resources/assets/banner.png" alt="">
+                <img class="mx-auto" src="resources/assets/banner.png" alt="" />
             </div>
             <!-- Segment: Text -->
             <div>
-                <h1 class="text-2xl md:text-3xl lg:text-6xl font-extrabold text-center mt-5">A barn house of this design has a <br> striking appearance</h1>
-                <p class="text-sm font-medium text-gray1 text-center mt-5 lg:mt-8 md:w-3/5 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <h1 class="text-2xl md:text-3xl lg:text-6xl font-extrabold text-center mt-5">
+                    A barn house of this design has a <br />
+                    striking appearance
+                </h1>
+                <p class="text-sm font-medium text-gray1 text-center mt-5 lg:mt-8 md:w-3/5 mx-auto">
+                    The barn house captivates with its blend of rustic charm and modern
+                    sophistication, featuring weathered wood, sleek metal accents, and
+                    large windows that flood the space with natural light.
+                </p>
             </div>
             <!-- Button: View Details -->
             <div class="mt-5 lg:mt-8 flex justify-center">
-                <button class="btn bg-green-secondary rounded-3xl text-base font-bold w-full md:w-auto">View Details
+                <button
+                    class="btn bg-green-secondary hover:bg-green-secondary border-green-primary hover:border-primary rounded-3xl text-base font-bold w-full md:w-auto">
+                    View Details
                     <!-- Icon: Arrow -->
                     <div class="rounded-full px-1 py-1 bg-green-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"     stroke-width="2" stroke="Black" class="size-4">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                        </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="Black" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
                     </div>
                 </button>
             </div>
@@ -152,9 +177,87 @@
     </header>
 
     <!-- Container: Main -->
-    <main></main>
+    <main>
+        <!-- Section: Design -->
+        <section class="mt-5 lg:mt-8 bg-bg1">
+            <div class="w-11/12 mx-auto pt-5">
+                <!-- Image: Vector Image -->
+                <div class="hidden lg:flex -ml-10 -mb-2 w-24">
+                    <img class="border-2 border-dashed py-2" src="resources/assets/Vector.png" alt="" />
+                </div>
+                <!-- Segment: Contents -->
+                <div class="flex lg:justify-between flex-col lg:flex-row">
+                    <div class="lg:w-2/5">
+                        <!-- Button: About Us -->
+                        <div class="text-center lg:text-left">
+                            <button class="border px-2 py-1 bg-white rounded-3xl text-xs font-bold">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="Black" class="size-3 rotate-45 inline">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                                About Us
+                            </button>
+                        </div>
+                        <!-- Text -->
+                        <div class="text-center lg:text-left">
+                            <h2 class="text-xl md:text-2xl lg:text-4xl font-extrabold mt-6">
+                                We design thoughtful, liveable spaces
+                            </h2>
+                            <p class="text-sm font-medium text-gray1 mt-6 mb-10">
+                                The barn house captivates with its blend of rustic charm and
+                                modern sophistication, featuring weathered wood, sleek metal
+                                accents, and large windows that flood the space with natural
+                                light.
+                            </p>
+                        </div>
+                        <!-- Card -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5 lg:gap-0 mb-5 lg:mb-8">
+                            <!-- Card1 -->
+                            <div class="flex items-center gap-5 bg-white p-6 rounded-2xl mb-5 lg:mb-8">
+                                <div>
+                                    <img src="resources/assets/commercial.png" alt="" />
+                                </div>
+                                <div class="space-y-3">
+                                    <h3 class="text-base font-extrabold text-gray2">
+                                        Commercial
+                                    </h3>
+                                    <p class="text-sm font-medium text-gray1">
+                                        The barn house captivates with its blend of rustic charm
+                                        and modern.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card2 -->
+                            <div class="flex items-center gap-5 bg-white p-6 rounded-2xl mb-5 lg:mb-8">
+                                <div>
+                                    <img src="resources/assets/residential.png" alt="" />
+                                </div>
+                                <div class="space-y-3">
+                                    <h3 class="text-base font-extrabold text-gray2">
+                                        Residential
+                                    </h3>
+                                    <p class="text-sm font-medium text-gray1">
+                                        The barn house captivates with its blend of rustic charm
+                                        and modern.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div>
+                        <img class="w-full" src="resources/assets/Rectangle.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
 
     <!-- Container: Footer -->
     <footer></footer>
-  </body>
+</body>
+
 </html>
