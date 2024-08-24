@@ -29,6 +29,7 @@
                         // Texts
                         gray1: "#737373",
                         gray2: "#494949",
+                        "light-white" : "#E9E9E9",
                         // Buttons
                         "green-primary": "#ABEF5F",
                         "green-secondary": "rgba(171, 239, 95, 0.5)",
@@ -558,12 +559,60 @@
                 </div>
             </div>
         </section>
-
         
     </main>
 
     <!-- Container: Footer -->
-    <footer></footer>
+    <footer class="border-4 border-l-0 border-r-0 border-b-0 md:border-b-4 border-white bg-black">
+        <div class="w-11/12 md:w-10/12 lg:w-9/12 mx-auto pt-5 md:pt-8 lg:pt-14 pb-5 md:pb-8 lg:pb-14">
+            <!-- Logo Copied From Navbar -->
+            <div class="navbar">
+                <div class="gap-x-1 mx-auto">
+                    <!-- Icon: Arrow -->
+                    <div class="rounded-full px-1 py-1 bg-green-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                    <div>
+                        <a class="text-2xl md:text-3xl font-extrabold text-[#E9E9E9]">Rinterio</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <p class="text-base font-medium text-gray1 lg:w-3/5 mx-auto text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+
+            <!-- Segment: List -->
+            <div class="mt-5 lg:mt-8 lg:w-4/5 mx-auto">
+                <ul class="space-y-2 md:flex text-[#E9E9E9] text-xs justify-between">
+                    <li class="text-center">Home</li>
+                    <li class="text-center">Service</li>
+                    <li class="text-center">Portfolio</li>
+                    <li class="text-center">Blogs</li>
+                    <li class="text-center">Contact US</li>
+                </ul>
+            </div>
+
+            <!-- Button: Book Consult -->
+            <div class="mt-5 md:mt-10 flex">
+                <button
+                    class="mx-auto btn bg-green-primary hover:bg-green-primary border-none hover:border-none rounded-3xl text-base font-extrabold w-full md:w-auto">
+                    Book Consult
+                    <!-- Icon: Arrow -->
+                    <div class="rounded-full px-1 py-1 bg-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="white" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
